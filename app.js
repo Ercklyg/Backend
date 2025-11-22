@@ -3,6 +3,7 @@ import 'dotenv/config.js';
 import cors from 'cors';
 import bookRoutes from "./routers/BookRoutes.js";
 import StudentRoutes from "./routers/StudentRoutes.js";
+import UserRoutes from "./routers/UserRoutes.js";
 // import StudentRoutes from "./routers/StudentRoutes.js";
 
 //create express app
@@ -33,3 +34,4 @@ try{
 
 app.use('/book', bookRoutes);
 app.use('/student', StudentRoutes);
+app.use('/user', UserRoutes);
